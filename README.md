@@ -20,6 +20,7 @@ This portfolio highlights projects created using tools like:
 *   `dashboards/`: Contains individual dashboard project pages (e.g., `power-bi-sales-dashboard.html`).
 
 ## URL 
+https://jathurshang.github.io/PortFolio/
 
 ## Connect
 
