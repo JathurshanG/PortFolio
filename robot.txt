@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jathurshang.github.io/PortFolio
-
+Sitemap: Sitemap: https://jathurshang.github.io/PortFolio/sitemap.xml
