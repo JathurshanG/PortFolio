@@ -1,0 +1,29 @@
+name: Generate Sitemap
+
+on:
+  push:
+    branches:
+      - main  # Remplace par la branche par défaut de ton dépôt si différente
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate sitemap
+        uses: cicirello/generate-sitemap@v1
+        with:
+          path-to-root: .  # Répertoire racine de ton site
+          base-url: https://jathurshang.github.io/PortFolio
+
+      - name: Commit and push sitemap
+        run: |
+          git config user.name "jathurshang"
+          git config user.email "jathur93@gmail.com"
+          git add sitemap.xml
+          git commit -m "Add/update sitemap.xml"
+          git push

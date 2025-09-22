@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jathur-gnana.com/sitemap.xml
+Sitemap: Sitemap: https://jathurshang.github.io/PortFolio/sitemap.xml
