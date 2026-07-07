@@ -3,55 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jathurshan G — Portfolio</title>
+  <meta name="description" content="Portfolio of Jathurshan G, a data engineer building ETL pipelines, AI recommendation systems, and analytics dashboards for business growth.">
+  <meta name="keywords" content="data engineering, ETL pipeline, AI recommendation, analytics dashboard, portfolio, business intelligence">
+  <title>Jathurshan G | Data Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <div class="logo">Jathurshan</div>
+    <div class="logo">
+      <a href="index.html">Jathurshan G</a>
+    </div>
     <nav>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Transforming data into powerful business insights</h1>
-    <p>I design and build data-driven solutions that turn complex information into clear, actionable results.</p>
-    <a href="projects.html" class="btn btn-primary">Explore my projects</a>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="badge">Data Engineering • Analytics • AI</span>
+        <h1>Turning complex data into clear business advantage.</h1>
+        <p>I'm a data engineer focused on building reliable ETL pipelines, AI-driven recommendation systems, and analytics dashboards that deliver measurable results.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Work Together</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <p class="hero-card-title">Featured outcome</p>
+        <h2>Skincare insights platform</h2>
+        <p>Designed an end-to-end workflow to extract product data, enrich it with machine learning, and visualize insights through interactive dashboards.</p>
+        <div class="hero-card-meta">
+          <span>Scrapy</span>
+          <span>Spark</span>
+          <span>API Automation</span>
+        </div>
+      </div>
+    </section>
 
-  <!-- Projects Preview -->
-  <section>
-    <h2>Featured Projects</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Projetct 1</h3>
-        <p>ETL pipeline using Scrapy & Spark to extract, transform, and analyze skincare product data.</p>
-        <a href="projects/html" class="btn btn-primary">View Project</a>
+    <section id="about" class="section-intro">
+      <div class="section-header">
+        <p class="eyebrow">About</p>
+        <h2>Data engineering that drives smarter decisions.</h2>
       </div>
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>AI-powered recommendation system for skincare products, leveraging deep learning models.</p>
-        <a href="projects/html" class="btn btn-primary">View Project</a>
-      </div>
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>Dashboard to monitor and optimize portfolio performance using API-driven data pipelines.</p>
-        <a href="projects/html" class="btn btn-primary">View Project</a>
-      </div>
-    </div>
-  </section>
+      <p>I help organizations unlock value from data by creating efficient pipelines, accurate models, and dashboards that are easy to understand. My work is driven by clean architecture, automation, and scalable delivery.</p>
 
-  <!-- Footer -->
+      <div class="service-grid">
+        <article class="service-card">
+          <h3>ETL & Data Integration</h3>
+          <p>Automated data collection, transformation, and validation from APIs, databases, and web sources.</p>
+        </article>
+        <article class="service-card">
+          <h3>AI Recommendations</h3>
+          <p>Developed personalized recommendation systems to improve customer discovery and retention.</p>
+        </article>
+        <article class="service-card">
+          <h3>Analytics Dashboards</h3>
+          <p>Delivered reporting solutions that help teams monitor KPIs and act on insights quickly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="featured-projects">
+      <div class="section-header">
+        <p class="eyebrow">Featured work</p>
+        <h2>Projects that showcase end-to-end delivery.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Skincare Data ETL</h3>
+          <p>Built a production pipeline using Scrapy, Spark, and cloud storage to ingest and transform product and pricing data for market intelligence.</p>
+          <a href="projects.html#project-1" class="btn btn-primary">Read more</a>
+        </article>
+        <article class="card">
+          <h3>AI Product Recommender</h3>
+          <p>Implemented a recommendation engine using collaborative filtering and feature engineering to personalize product suggestions.</p>
+          <a href="projects.html#project-2" class="btn btn-primary">Read more</a>
+        </article>
+        <article class="card">
+          <h3>Portfolio Analytics Dashboard</h3>
+          <p>Created an interactive dashboard to monitor portfolio performance and surface actionable insights from live data feeds.</p>
+          <a href="projects.html#project-3" class="btn btn-primary">Read more</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-cta">
+      <div>
+        <p class="eyebrow">Let's collaborate</p>
+        <h2>Ready to build your next data solution?</h2>
+        <p>Contact me to discuss your project, streamline analytics, or automate data workflows with a strong engineering foundation.</p>
+      </div>
+      <a href="mailto:hello@jathurshan.com" class="btn btn-primary">Email me</a>
+    </section>
+  </main>
+
   <footer>
-    © 2025 — Built with ❤️ by Jathurshan G.
+    <p>© 2026 Jathurshan G. Mobile-friendly portfolio built for speed, clarity, and search.</p>
   </footer>
-
 </body>
 </html>
