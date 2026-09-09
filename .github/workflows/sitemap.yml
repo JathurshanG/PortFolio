@@ -1,29 +1,24 @@
-name: Generate Sitemap
+name: Validate portfolio
 
 on:
   push:
-    branches:
-      - main  # Remplace par la branche par défaut de ton dépôt si différente
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          persist-credentials: false
 
-      - name: Generate sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          path-to-root: .  # Répertoire racine de ton site
-          base-url: https://jathurshang.github.io/PortFolio
-
-      - name: Commit and push sitemap
-        run: |
-          git config user.name "jathurshang"
-          git config user.email "jathur93@gmail.com"
-          git add sitemap.xml
-          git commit -m "Add/update sitemap.xml"
-          git push
+      - name: Check pages, links and sitemap
+        run: python3 scripts/check_site.py

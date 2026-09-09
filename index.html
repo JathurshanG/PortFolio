@@ -1,111 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Jathurshan G, a data engineer building ETL pipelines, AI recommendation systems, and analytics dashboards for business growth.">
-  <meta name="keywords" content="data engineering, ETL pipeline, AI recommendation, analytics dashboard, portfolio, business intelligence">
-  <title>Jathurshan G | Data Engineering Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jathurshan G | Data Engineer — Python, ETL &amp; Analytics</title>
+  <meta name="description" content="Jathurshan G, Data Engineer : découvrez mes projets de pipelines ETL Python, de recommandation IA et de tableaux de bord pour l’analyse et le reporting.">
+  <meta name="theme-color" content="#0b1b2b">
+  <link rel="canonical" href="https://jathurshang.github.io/PortFolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Jathurshan G — Portfolio Data">
+  <meta property="og:title" content="Jathurshan G | Data Engineer — Python, ETL &amp; Analytics">
+  <meta property="og:description" content="Intégration de données, pipelines ETL, recommandation IA et tableaux de bord : le portfolio data de Jathurshan G.">
+  <meta property="og:url" content="https://jathurshang.github.io/PortFolio/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jathurshan G | Data Engineer — Python, ETL &amp; Analytics">
+  <meta name="twitter:description" content="Découvrez mes projets en Data Engineering, recommandation IA et analytics, de la collecte des données au reporting métier.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@id": "https://jathurshang.github.io/PortFolio/#person",
+        "@type": "Person",
+        "jobTitle": "Data Engineer",
+        "knowsAbout": [
+          "Data Engineering",
+          "Python",
+          "Scrapy",
+          "Apache Spark",
+          "ETL",
+          "Business Intelligence",
+          "Systèmes de recommandation"
+        ],
+        "name": "Jathurshan G",
+        "sameAs": [
+          "https://github.com/JathurshanG"
+        ],
+        "url": "https://jathurshang.github.io/PortFolio/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://jathurshang.github.io/PortFolio/#webpage",
+        "url": "https://jathurshang.github.io/PortFolio/",
+        "name": "Jathurshan G | Data Engineer — Python, ETL & Analytics",
+        "description": "Portfolio de Jathurshan G : intégration de données, pipelines ETL, recommandation IA et tableaux de bord.",
+        "inLanguage": "fr-FR",
+        "about": {
+          "@id": "https://jathurshang.github.io/PortFolio/#person"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html">Jathurshan G</a>
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="./" aria-current="page">Jathurshan G<span class="logo-role">Data Engineer</span></a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#about">À propos</a>
+        <a href="projects.html">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main-content" tabindex="-1">
+    <section class="hero container" aria-labelledby="home-title">
       <div class="hero-copy">
-        <span class="badge">Data Engineering • Analytics • AI</span>
-        <h1>Turning complex data into clear business advantage.</h1>
-        <p>I'm a data engineer focused on building reliable ETL pipelines, AI-driven recommendation systems, and analytics dashboards that deliver measurable results.</p>
+        <p class="eyebrow">Data Engineering · Analytics · IA</p>
+        <h1 id="home-title">Data Engineer,<br><span>de la collecte à l’analyse.</span></h1>
+        <p class="lead">Je conçois des pipelines ETL, des systèmes de recommandation et des tableaux de bord pour rendre les données exploitables.</p>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-secondary">Work Together</a>
+          <a href="projects.html" class="btn btn-primary">Découvrir les projets</a>
+          <a href="#contact" class="btn btn-secondary">Parlons de votre besoin</a>
         </div>
       </div>
       <div class="hero-card">
-        <p class="hero-card-title">Featured outcome</p>
-        <h2>Skincare insights platform</h2>
-        <p>Designed an end-to-end workflow to extract product data, enrich it with machine learning, and visualize insights through interactive dashboards.</p>
-        <div class="hero-card-meta">
-          <span>Scrapy</span>
-          <span>Spark</span>
-          <span>API Automation</span>
-        </div>
+        <p class="eyebrow">Projet à découvrir</p>
+        <h2>Pipeline ETL skincare</h2>
+        <p>Collecter des données produit, les transformer avec Apache Spark et préparer leur exploitation dans les analyses et les reportings.</p>
+        <ul class="tags" aria-label="Technologies du projet">
+          <li>Python</li><li>Scrapy</li><li>Apache Spark</li>
+        </ul>
       </div>
     </section>
 
-    <section id="about" class="section-intro">
+    <section id="about" class="section-intro container" aria-labelledby="about-title">
       <div class="section-header">
-        <p class="eyebrow">About</p>
-        <h2>Data engineering that drives smarter decisions.</h2>
+        <p class="eyebrow">À propos</p>
+        <h2 id="about-title">Relier les sources de données aux besoins métier.</h2>
       </div>
-      <p>I help organizations unlock value from data by creating efficient pipelines, accurate models, and dashboards that are easy to understand. My work is driven by clean architecture, automation, and scalable delivery.</p>
-
+      <p>Mon travail couvre la collecte, la transformation et la validation des données, puis leur utilisation dans des modèles et des outils de reporting. Je privilégie des traitements compréhensibles et automatisés, au service des équipes qui utilisent les résultats.</p>
       <div class="service-grid">
         <article class="service-card">
-          <h3>ETL & Data Integration</h3>
-          <p>Automated data collection, transformation, and validation from APIs, databases, and web sources.</p>
+          <h3>ETL &amp; intégration de données</h3>
+          <p>Collecter, transformer et valider les données provenant d’API, de bases de données et de sources web.</p>
         </article>
         <article class="service-card">
-          <h3>AI Recommendations</h3>
-          <p>Developed personalized recommendation systems to improve customer discovery and retention.</p>
+          <h3>Recommandation IA</h3>
+          <p>Combiner les préférences utilisateur et les caractéristiques produit pour personnaliser les suggestions.</p>
         </article>
         <article class="service-card">
-          <h3>Analytics Dashboards</h3>
-          <p>Delivered reporting solutions that help teams monitor KPIs and act on insights quickly.</p>
+          <h3>Tableaux de bord analytics</h3>
+          <p>Organiser les KPI et les visualisations pour rendre les tendances lisibles et faciliter le suivi métier.</p>
         </article>
       </div>
     </section>
 
-    <section id="projects" class="featured-projects">
+    <section id="projects" class="featured-projects container" aria-labelledby="featured-title">
       <div class="section-header">
-        <p class="eyebrow">Featured work</p>
-        <h2>Projects that showcase end-to-end delivery.</h2>
+        <p class="eyebrow">Réalisations</p>
+        <h2 id="featured-title">Trois projets, de l’intégration au reporting.</h2>
       </div>
-
       <div class="cards">
         <article class="card">
-          <h3>Skincare Data ETL</h3>
-          <p>Built a production pipeline using Scrapy, Spark, and cloud storage to ingest and transform product and pricing data for market intelligence.</p>
-          <a href="projects.html#project-1" class="btn btn-primary">Read more</a>
+          <h3>Pipeline ETL skincare</h3>
+          <p>Un workflow Python, Scrapy et Apache Spark pour collecter et transformer les données produit, les prix et les avis.</p>
+          <a href="projects.html#skincare-etl-pipeline" class="text-link">Explorer le pipeline ETL</a>
         </article>
         <article class="card">
-          <h3>AI Product Recommender</h3>
-          <p>Implemented a recommendation engine using collaborative filtering and feature engineering to personalize product suggestions.</p>
-          <a href="projects.html#project-2" class="btn btn-primary">Read more</a>
+          <h3>Recommandation de produits</h3>
+          <p>Un moteur combinant filtrage collaboratif et préparation des variables pour personnaliser les suggestions.</p>
+          <a href="projects.html#skincare-ai-recommender" class="text-link">Explorer le moteur IA</a>
         </article>
         <article class="card">
-          <h3>Portfolio Analytics Dashboard</h3>
-          <p>Created an interactive dashboard to monitor portfolio performance and surface actionable insights from live data feeds.</p>
-          <a href="projects.html#project-3" class="btn btn-primary">Read more</a>
+          <h3>Tableau de bord de portefeuille</h3>
+          <p>Des visualisations et des indicateurs réunis pour suivre les performances et préparer le reporting.</p>
+          <a href="projects.html#portfolio-analytics-dashboard" class="text-link">Explorer le tableau de bord</a>
         </article>
       </div>
     </section>
 
-    <section id="contact" class="contact-cta">
+    <section id="contact" class="contact-cta container" aria-labelledby="contact-title">
       <div>
-        <p class="eyebrow">Let's collaborate</p>
-        <h2>Ready to build your next data solution?</h2>
-        <p>Contact me to discuss your project, streamline analytics, or automate data workflows with a strong engineering foundation.</p>
+        <p class="eyebrow">Travaillons ensemble</p>
+        <h2 id="contact-title">Un projet data à construire ?</h2>
+        <p>Parlons de vos sources de données, de vos traitements et des décisions que votre reporting doit éclairer.</p>
       </div>
-      <a href="mailto:hello@jathurshan.com" class="btn btn-primary">Email me</a>
+      <a href="mailto:hello@jathurshan.com" class="btn btn-primary">Discuter de votre projet</a>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Jathurshan G. Mobile-friendly portfolio built for speed, clarity, and search.</p>
+  <footer class="site-footer container">
+    <p>© 2026 Jathurshan G · Data Engineering &amp; Analytics</p>
+    <a href="https://github.com/JathurshanG">Profil GitHub</a>
   </footer>
 </body>
 </html>

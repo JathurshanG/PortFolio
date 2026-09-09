@@ -1,0 +1,6 @@
+# Publish at https://jathurshang.github.io/robots.txt for crawler discovery.
+# Crawlers do not consult /PortFolio/robots.txt.
+User-agent: *
+Allow: /
+
+Sitemap: https://jathurshang.github.io/PortFolio/sitemap.xml
